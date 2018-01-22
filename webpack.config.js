@@ -4,13 +4,13 @@ var webpack = require('webpack');
 var HtmlwebpackPlugin = require('html-webpack-plugin');
 
 var ROOT_PATH = path.resolve(__dirname);
-var APP_PATH = path.resolve(ROOT_PATH, 'app');
+var APP_PATH = path.resolve(ROOT_PATH, 'src');
 var BUILD_PATH = path.resolve(ROOT_PATH, 'build');
-var TEM_PATH = path.resolve(ROOT_PATH, 'templates');
+var PAGES_PATH = path.resolve(ROOT_PATH, 'src/main/pages');
 
 module.exports = {
   entry: {
-    app: path.resolve(APP_PATH, 'index.js'),
+    app: path.resolve(APP_PATH, 'main/index.js'),
     vendors: ['jquery']
   },
   output: {
@@ -68,7 +68,7 @@ module.exports = {
   plugins: [
     new HtmlwebpackPlugin({
       title: 'Hello World app',
-      template: path.resolve(TEM_PATH, 'index.html'),
+      template: path.resolve(PAGES_PATH, 'index.html'),
       filename: 'index.html',
       chunks: ['app', 'vendors'],
       inject: 'body'

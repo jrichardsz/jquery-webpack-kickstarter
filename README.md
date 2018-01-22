@@ -25,8 +25,6 @@ npm run build
 ```
 then you'll find a new build folder generated.
 
-**TODO: testing**
+**TODO**
 
-```bash
-npm run test
-```
+- Implement test code

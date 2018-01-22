@@ -1,4 +1,4 @@
-import './main.scss';
+import './assets/main.scss';
 /*
  * jquery plugin
  * $,jQuery,window.jQuery webpack.config.js
